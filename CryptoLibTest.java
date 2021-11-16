@@ -1,4 +1,3 @@
-// Compilation:
 //   javac CryptoLibTest.java
 // Running:
 //   java CryptoLibTest
