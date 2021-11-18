@@ -5,7 +5,7 @@ import java.math.BigInteger;
 public class AttackRSA {
 
 	public static void main(String[] args) {
-		String filename = "input.txt";
+		String filename = "Assignment1/input.txt";
 		BigInteger[] N = new BigInteger[3];
 		BigInteger[] e = new BigInteger[3];
 		BigInteger[] c = new BigInteger[3];

@@ -10,7 +10,7 @@ public class ElGamal {
   }  
 
   public static void main(String[] arg) {
-    String filename = "input.txt";
+    String filename = "Assignment1/input.txt";
     try {
       BufferedReader br = new BufferedReader(new FileReader(filename));
       BigInteger p = new BigInteger(br.readLine().split("=")[1]);
