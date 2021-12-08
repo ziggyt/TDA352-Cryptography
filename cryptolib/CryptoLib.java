@@ -1,7 +1,7 @@
-// Compilation (CryptoLibTest contains the main-method):
-//   javac CryptoLibTest.java
+package cryptolib;// Compilation (cryptolib.CryptoLibTest contains the main-method):
+//   javac cryptolib.CryptoLibTest.java
 // Running:
-//   java CryptoLibTest
+//   java cryptolib.CryptoLibTest
 
 import java.util.Arrays;
 
@@ -12,6 +12,10 @@ public class CryptoLib {
      * "result[1] = s" and "result[2] = t" such that "gcd" is the greatest
      * common divisor of "a" and "b", and "gcd = a * s + b * t".
      **/
+
+    public static void main(String[] args) {
+        System.out.println(ModInv(16, 23));
+    }
     public static int[] EEA(int a, int b) {
         // Note: as you can see in the test suite,
         // your function should work for any (positive) value of a and b.
@@ -84,10 +88,10 @@ public class CryptoLib {
 
         int[] eea = EEA(m, n);
 
-//        if (eea[0] != 1) {
-//            System.out.println("Modular inverse does not exist for " + n + " and " + m);
-//            return 0;
-//        }
+        if (eea[0] != 1) {
+            System.out.println("Modular inverse does not exist for " + n + " and " + m);
+            return 0;
+        }
 
         return Math.floorMod(eea[2], m);
 

@@ -1,11 +1,14 @@
+package Assignment4;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.math.BigInteger;
 
+
 public class AttackRSA {
 
 	public static void main(String[] args) {
-		String filename = "Assignment1/input.txt";
+		String filename = "Assignment4/input.txt";
 		BigInteger[] N = new BigInteger[3];
 		BigInteger[] e = new BigInteger[3];
 		BigInteger[] c = new BigInteger[3];
@@ -47,8 +50,31 @@ public class AttackRSA {
 	 */
 	private static BigInteger recoverMessage(BigInteger[] N, BigInteger[] e,
 			BigInteger[] c) {
-		// TODO Solve assignment.
-		return BigInteger.ZERO;
+
+
+
+		BigInteger first = crt(c[0], c[1], N[0], N[1]);
+		BigInteger second = crt(first, c[2], N[0].multiply(N[1]), N[2]);
+
+		BigInteger result = CubeRoot.cbrt(second);
+
+		return result;
 	}
+
+	//chinese remainder theorem
+
+	private static BigInteger crt(BigInteger x1, BigInteger x2, BigInteger p, BigInteger q){
+
+		BigInteger u = BigInteger.valueOf(0);
+
+		u = x2.subtract(x1).multiply(p.modInverse(q)).mod(q);
+
+		BigInteger res = x1.add(u.multiply(p));
+
+
+		return res;
+	}
+
+
 
 }

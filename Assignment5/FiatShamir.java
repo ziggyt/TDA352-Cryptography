@@ -1,3 +1,5 @@
+package Assignment5;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.math.BigInteger;
@@ -17,7 +19,7 @@ public class FiatShamir {
 	}
 
 	public static void main(String[] args) {
-		String filename = "Assignment1/input.txt";
+		String filename = "Assignment5/input.txt";
 		BigInteger N = BigInteger.ZERO;
 		BigInteger X = BigInteger.ZERO;
 		ProtocolRun[] runs = new ProtocolRun[10];
