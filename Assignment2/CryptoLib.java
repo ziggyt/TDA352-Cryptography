@@ -1,7 +1,7 @@
-package cryptolib;// Compilation (cryptolib.CryptoLibTest contains the main-method):
-//   javac cryptolib.CryptoLibTest.java
+package Assignment2;// Compilation (Assignment2.CryptoLibTest contains the main-method):
+//   javac Assignment2.CryptoLibTest.java
 // Running:
-//   java cryptolib.CryptoLibTest
+//   java Assignment2.CryptoLibTest
 
 import java.util.Arrays;
 

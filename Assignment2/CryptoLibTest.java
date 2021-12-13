@@ -1,6 +1,6 @@
-package cryptolib;//   javac cryptolib.CryptoLibTest.java
+package Assignment2;//   javac Assignment2.CryptoLibTest.java
 // Running:
-//   java cryptolib.CryptoLibTest
+//   java Assignment2.CryptoLibTest
 
 public class CryptoLibTest {
 
